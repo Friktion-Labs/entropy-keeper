@@ -2,38 +2,6 @@
 
 https://forum.friktion.fi/t/more-keepers-for-entropy/73
 
-
-## Server Creation
-
-Create a new Compute Engine instance
-1. Series: N1
-2. Machine Type: f1-micro
-<img width="1022" alt="Screen Shot 2022-04-22 at 09 34 03" src="https://user-images.githubusercontent.com/219298/164745641-1bf81dff-910d-4a5f-b61b-0723af47d46d.png">
-
-4. Change Boot Disk to Ubuntu 20.04 LTS
-
-<img width="607" alt="Screen Shot 2022-04-22 at 09 33 52" src="https://user-images.githubusercontent.com/219298/164745639-121d29f7-a3ed-4c83-974f-23b2907730d7.png">
-
-## Run as Root
-We'll run all these commands as a super user
-```sh
-sudo su
-```
-
-## Setup GIT
-
-```sh
-eval "$(ssh-agent -s)"
-ssh-keygen -t rsa
-ssh-add
-ssh-add -l -E sha256
-```
-
-Follow this guide to add your SSH key to Github https://docs.github.com/en/authentication/troubleshooting-ssh/error-permission-denied-publickey#verify-the-public-key-is-attached-to-your-account
-
-On step 6, you can easily get your key by running:
-```sh
-tail /root/.ssh/id_rsa.pub
 ```
 
 ## Install Yarn & NPM
@@ -137,3 +105,36 @@ reboot
 ```
 sudo journalctl -u keeper.service -f
 ```
+
+
+## Server Creation
+
+Create a new Compute Engine instance
+1. Series: N1
+2. Machine Type: f1-micro
+<img width="1022" alt="Screen Shot 2022-04-22 at 09 34 03" src="https://user-images.githubusercontent.com/219298/164745641-1bf81dff-910d-4a5f-b61b-0723af47d46d.png">
+
+4. Change Boot Disk to Ubuntu 20.04 LTS
+
+<img width="607" alt="Screen Shot 2022-04-22 at 09 33 52" src="https://user-images.githubusercontent.com/219298/164745639-121d29f7-a3ed-4c83-974f-23b2907730d7.png">
+
+## Run as Root
+We'll run all these commands as a super user
+```sh
+sudo su
+```
+
+## Setup GIT
+
+```sh
+eval "$(ssh-agent -s)"
+ssh-keygen -t rsa
+ssh-add
+ssh-add -l -E sha256
+```
+
+Follow this guide to add your SSH key to Github https://docs.github.com/en/authentication/troubleshooting-ssh/error-permission-denied-publickey#verify-the-public-key-is-attached-to-your-account
+
+On step 6, you can easily get your key by running:
+```sh
+tail /root/.ssh/id_rsa.pub
