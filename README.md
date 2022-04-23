@@ -1,5 +1,6 @@
 # Deploying Entropy Keeper on Google Cloud Platform
 
+credit to xcmg.finance for the guide :)
 https://forum.friktion.fi/t/more-keepers-for-entropy/73
 
 ```
