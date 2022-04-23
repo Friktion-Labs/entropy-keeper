@@ -1,0 +1,21 @@
+{
+  "name": "@friktion-labs/entropy-keeper",
+  "version": "1.0.0",
+  "description": "Client to crank the Entropy market",
+  "repository": "https://github.com/Friktion-Labs/entropy-client",
+  "author": {
+    "name": "Friktion Labs",
+    "email": "team@friktionlabs.com",
+    "url": "https://friktion.fi"
+  },
+  "license": "MIT",
+  "scripts": {
+    "liquidator": "ts-node src/liquidator.ts",
+    "clean": "rm -rf lib",
+    "type-check": "tsc --pretty --noEmit",
+    "keeper": "ts-node src/keeper.ts"
+  },
+  "devDependencies": {
+    "@friktion-labs/entropy-client": "^1.4.1"
+  }
+}
