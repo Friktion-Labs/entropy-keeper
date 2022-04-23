@@ -51,22 +51,15 @@ Ensure a SOL funded private keypair is in this file location:
 solana-keygen recover 'prompt:?key=0/0' --outfile ~/.config/solana/entropy-mainnet-authority.json
 ```
 
+## Running the Keeper
+
+```
+yarn
+yarn keeper
+```
 
 ## Running the keeper as a Daemon
 You'll want it running in the background on boot
-
-```
-nano /usr/local/bin/keeper.sh
-```
-
-Paste:
-```
-#!/bin/bash
-
-echo "running keeper"
-cd /home/ubuntu/entropy-client
-yarn keeper
-```
 
 ```
 nano /etc/systemd/system/keeper.service
@@ -83,7 +76,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/usr/local/bin/keeper.sh
+ExecStart={ENTER YOUR PATH NAME HERE. e.g. /usr/local/bin/keeper.sh)
 
 [Install]
 WantedBy=multi-user.target
@@ -139,3 +132,4 @@ Follow this guide to add your SSH key to Github https://docs.github.com/en/authe
 On step 6, you can easily get your key by running:
 ```sh
 tail /root/.ssh/id_rsa.pub
+```
