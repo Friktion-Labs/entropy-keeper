@@ -13,7 +13,7 @@
     "liquidator": "ts-node src/liquidator.ts",
     "clean": "rm -rf lib",
     "type-check": "tsc --pretty --noEmit",
-    "keeper": "ts-node src/keeper.ts"
+    "keeper": "ts-node keeper.ts"
   },
   "devDependencies": {
     "@friktion-labs/entropy-client": "^1.4.1"
