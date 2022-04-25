@@ -16,6 +16,6 @@
     "keeper": "ts-node keeper.ts run"
   },
   "devDependencies": {
-    "@friktion-labs/entropy-client": "1.4.55"
+    "@friktion-labs/entropy-client": "1.4.61"
   }
 }

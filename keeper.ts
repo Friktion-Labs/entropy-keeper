@@ -1,4 +1,4 @@
-import {runKeeper} from "@friktion-labs/entropy-client"
+import {runKeeper} from "@friktion-labs/entropy-client/lib/src/keeper"
 
-runKeeper();
+runKeeper(0);
 // runKeeper(0);
