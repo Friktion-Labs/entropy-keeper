@@ -30,10 +30,10 @@
     "@ethersproject/logger" "^5.6.0"
     hash.js "1.1.7"
 
-"@friktion-labs/entropy-client@1.4.53":
-  version "1.4.53"
-  resolved "https://registry.yarnpkg.com/@friktion-labs/entropy-client/-/entropy-client-1.4.53.tgz#27b8d24ba409816a33dc97cc984076a190eff8de"
-  integrity sha512-2QL85YxjNTSg4OUKvVIJlA1+pLp8q/i4p4vhPbXTQVvoykC7Rto9MFFDxKcd+J6CJmNT1+F4bqyG7ugTSwYxCQ==
+"@friktion-labs/entropy-client@1.4.55":
+  version "1.4.55"
+  resolved "https://registry.yarnpkg.com/@friktion-labs/entropy-client/-/entropy-client-1.4.55.tgz#17ba9248e8bda8e87deb37ace286ceb007a2cab6"
+  integrity sha512-QJt91N0RBZ1HbTLYMVx2x22O06pZwxFhhv+TDmIbnsKcYzCE8eLSO2wOSsSW6cCJvPG5NlkgoVXj4upiPgObQQ==
   dependencies:
     "@project-serum/anchor" "^0.16.2"
     "@project-serum/borsh" "^0.2.3"
